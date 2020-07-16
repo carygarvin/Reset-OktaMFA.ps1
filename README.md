@@ -20,7 +20,7 @@ Script takes either no or one argument when launched.
 
 This script will first list CSV files stored in the current user's '__Downloads__' folder. Prior to that, the user needs to download from the Okta Admin portal (Admin>Reports>Reports>Multifactor Authentication>MFA Usage/Download CSV) the latest MFA Usage report which serves as input for the present script.
 Upon launching the script the user will be prompted to chose the CSV file with last MFA usage information. The Script will then parse the CSV file and keep only unique entries with the most recent 'Last Used MFA' for each user. Then it filters out entries which are more recent than the specified number of days in variable **$MFAResetThresholdAge**.
-From the entries left (older than age treshold or blank), it will reset the MFA for each one of them and finally output in the current users '__My Documents__' folder the result in a CSV file titled with the execution time stamp followed by "__MFAResetReport.csv__".
+From the entries left (older than age treshold or blank), it will reset the MFA for each one of them and finally output in the current users '__My Documents__' folder the result in a CSV file titled with the execution time stamp followed by "__MFAResetReport.csv_".
 
 There are 3 configurable variables (see lines 91 to 94 within the script) which need to be set by IT Administrator prior to using the present Script:  
 * Variable **$OktaOrgNam** which is the name, in the Okta Portal URL, corresponding to your organization.  
