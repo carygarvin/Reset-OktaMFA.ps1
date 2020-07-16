@@ -1,5 +1,5 @@
 # Reset-OktaMFA.ps1
-PowerShell script to reset Okta MFAs for users with last used MFAs older than a certain age or never used.
+PowerShell Script to reset Okta MFAs for users with last used MFAs older than a certain age or never used.
 
 Author       : Cary GARVIN  
 Contact      : cary(at)garvin.tech  
