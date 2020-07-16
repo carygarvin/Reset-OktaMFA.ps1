@@ -25,5 +25,5 @@ From the entries left (older than age treshold or blank), it will reset the MFA 
 # Script configuration
 There are 3 configurable variables (see lines 91 to 94 within the script) which need to be set by IT Administrator prior to using the present Script:  
 * Variable **$OktaOrgName** which is the name, in the Okta Portal URL, corresponding to your organization.  
-* Variable **$OktaAPItoken** which is the temporary token Okta issued for you upon request. This token can be issued and taken from Admin>Security>API>Token once your are logged in the Okta Admin Portal.  
+* Variable **$OktaAPIToken** which is the temporary token Okta issued for you upon request. This token can be issued and taken from Admin>Security>API>Token once your are logged in the Okta Admin Portal.  
 * Variable **$MFAResetThresholdAge** which is the chosen last used MFA age in days beyond which the MFA reset is performed. Obviously for those that have never connected (blank last used date), the MFA will also be reset.  
