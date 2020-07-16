@@ -14,7 +14,7 @@ Release date : 26/11/2018 (CET)
 
 Script takes either no or one argument when launched.  
 * No argument will trigger the script in simuation mode.  
-* '`ResetFromUsageReport`' argument will trigger the script so that Okta MFA resets are performed based on input from the chosen CSV file (after entry dedup and date filtering).  
+* `ResetFromUsageReport` argument will trigger the script so that Okta MFA resets are performed based on input from the chosen CSV file (after entry dedup and date filtering).  
 * Any other combination of arguments will cause the script to abort displaying info on possible options for the script.  
 
 
