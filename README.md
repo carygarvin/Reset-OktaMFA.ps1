@@ -3,11 +3,11 @@ PowerShell Script to reset Okta MFAs for users with last used MFAs older than a 
 
 Author       : Cary GARVIN  
 Contact      : cary(at)garvin.tech  
-LinkedIn     : https://www.linkedin.com/in/cary-garvin  
-GitHub       : https://github.com/carygarvin/  
+LinkedIn     : [https://www.linkedin.com/in/cary-garvin](https://www.linkedin.com/in/cary-garvin)  
+GitHub       : [https://github.com/carygarvin/](https://github.com/carygarvin/)  
 
 
-Script Name  : Reset-OktaMFA.ps1  
+Script Name  : [Reset-OktaMFA.ps1](https://github.com/carygarvin/Reset-OktaMFA.ps1/)  
 Version      : 1.0  
 Release date : 26/11/2018 (CET)  
 
