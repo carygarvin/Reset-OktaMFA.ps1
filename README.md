@@ -12,15 +12,15 @@ Version      : 1.0
 Release date : 26/11/2018 (CET)  
 
 # Script usage
-Script takes either no or one argument when launched.  
+Script takes either none or one argument when launched.  
 * No argument will trigger the script in simulation mode.  
-* `ResetFromUsageReport` argument will trigger the script so that Okta MFA resets are performed based on input from the chosen CSV file (after entry dedup and date filtering).  
-* Any other combination of arguments will cause the script to abort displaying info on possible options for the script.  
+* `ResetFromUsageReport` argument will trigger the Script so that Okta MFA resets are performed based on input from the chosen CSV file (after entry dedup and date filtering).  
+* Any other combination of arguments will cause the Script to abort displaying info with possible options for the Script.  
 
 
-This script will first list CSV files stored in the current user's '_Downloads_' folder. Prior to that, the user needs to download from the Okta Admin portal (Admin>Reports>Reports>Multifactor Authentication>MFA Usage/Download CSV) the latest MFA Usage report which serves as input for the present script.
+This Script will first list CSV files stored in the current user's '_Downloads_' folder. Prior to that, the user needs to download from the Okta Admin portal (Admin>Reports>Reports>Multifactor Authentication>MFA Usage/Download CSV) the latest MFA Usage report which serves as input for the present script.
 Upon launching the script, the user will be prompted to choose the CSV file with last MFA usage information. The Script will then parse the CSV file and keep only unique entries with the most recent 'Last Used MFA' for each user. Then it filters out entries which are more recent than the specified number of days in variable **$MFAResetThresholdAge**.
-From the entries left (older than age treshold or blank), it will reset the MFA for each one of them and finally output in the current user's '_My Documents_' folder the result in a CSV file titled with the execution time stamp followed by "__MFAResetReport.csv_".
+From the remaining entries (older than age threshold or blank), it will reset the MFA for each one and finally output in the current user's '_My Documents_' folder the result in a CSV file titled with the execution time stamp followed by "__MFAResetReport.csv__".
 
 # Script configuration
 There are 3 configurable variables (see lines 91 to 94 within the script) which need to be set by IT Administrator prior to using the present Script:  
