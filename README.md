@@ -8,6 +8,7 @@ GitHub       : [https://github.com/carygarvin/](https://github.com/carygarvin/)
 
 
 Script Name  : [Reset-OktaMFA.ps1](https://github.com/carygarvin/Reset-OktaMFA.ps1/)  
+Script Link  : https://carygarvin.github.io/Reset-OktaMFA.ps1/  
 Version      : 1.0  
 Release date : 26/11/2018 (CET)  
 
